@@ -235,23 +235,28 @@ else:
 
 cast = selected["cast"]
 
-if isinstance(cast, list) and len(cast) > 0:
+# List or NumPy array
+if hasattr(cast, "__len__") and not isinstance(cast, str):
 
-    st.markdown(
-        f"**👥 Cast:** {', '.join(cast[:5])}"
-    )
+    if len(cast) > 0:
+        st.markdown(
+            f"**👥 Cast:** {', '.join(map(str, cast[:5]))}"
+        )
+    else:
+        st.markdown("**👥 Cast:** N/A")
 
-elif pd.notna(cast) and str(cast).strip():
+# String
+elif isinstance(cast, str):
 
-    st.markdown(
-        f"**👥 Cast:** {cast}"
-    )
+    if cast.strip():
+        st.markdown(f"**👥 Cast:** {cast}")
+    else:
+        st.markdown("**👥 Cast:** N/A")
 
+# Missing / other
 else:
 
-    st.markdown(
-        "**👥 Cast:** N/A"
-    )
+    st.markdown("**👥 Cast:** N/A")
 
 # ---------------------------------------------------
 # Overview
