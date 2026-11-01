@@ -7,7 +7,7 @@ CineVerse AI is an interactive, content-based movie recommendation and analytics
 
 Beyond recommendations, the platform provides an analytics dashboard, an interactive dataset explorer, and a dedicated model comparison module, bringing movie discovery and data analysis together in one application.
 
-🌐 **Live Demo:** [CineVerse AI — Try the Application](https://movie-recommendation-system-sahibz-app.streamlit.app/)
+🌐 **Live Demo:** [CineVerse AI — Try the Application](https://movie-recommendation-system-hte3eq2urcvaguvz4jlrj4.streamlit.app/)
 
 ---
 
@@ -266,7 +266,7 @@ Guru Nanak Dev Engineering College, Ludhiana
 **Category:** Machine Learning / NLP / Data Analytics  
 **Application:** Streamlit Web Application  
 **Recommendation Approach:** Content-Based Filtering  
-**Deployment:** [Launch CineVerse AI](https://movie-recommendation-system-sahibz-app.streamlit.app/)
+**Deployment:** [Launch CineVerse AI](https://movie-recommendation-system-hte3eq2urcvaguvz4jlrj4.streamlit.app/)
 
 ---
 
