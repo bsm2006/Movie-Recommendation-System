@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-
+from image_renderer import render_matplotlib_base64
 from recommender import df_master
 
 # ---------------------------------------------------
@@ -151,7 +151,7 @@ for bar in bars:
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 # =====================================================
 # Average Rating by Genre (Lollipop Chart)
@@ -224,7 +224,7 @@ ax.grid(
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 st.divider()
 
@@ -286,7 +286,7 @@ for bar in bars:
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 # =====================================================
 # Director Performance (Bubble Plot)
@@ -356,7 +356,7 @@ ax.grid(
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 st.divider()
 
@@ -414,7 +414,7 @@ ax.grid(alpha=GRID_ALPHA)
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 # =====================================================
 # Rating Distribution
@@ -455,7 +455,7 @@ ax.grid(alpha=GRID_ALPHA)
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 st.divider()
 
@@ -501,7 +501,7 @@ ax.grid(alpha=GRID_ALPHA)
 
 sns.despine()
 
-st.pyplot(fig)
+render_matplotlib_base64(fig)
 
 st.divider()
 

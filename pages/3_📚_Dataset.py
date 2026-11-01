@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-
+from image_renderer import render_matplotlib_base64
 from recommender import df_master
 
 # =====================================================
@@ -229,7 +229,7 @@ else:
             va="center"
         )
 
-    st.pyplot(fig, use_container_width=True)
+    render_matplotlib_base64(fig)
 
 st.divider()
 
